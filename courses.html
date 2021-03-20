@@ -1,0 +1,998 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="Js/custom.js"></script>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+        <link rel="stylesheet" href="css/design.css">
+        <style>
+            .modal-backdrop {
+                display: none;
+            }
+        </style>
+    
+    </head>
+<body>
+    <header class="sticky-top">
+        <div class="p-1" id="topHeader">
+            <div style="background-color:#F53232;margin-top: -4px;" class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <a class="p-1" href="tel:+919090909090"> <i class="fas fa-phone"></i> +(91) 9090909090 </a>
+                        <a class="p-1" href="mailto:simplesnippetsinfo@gmail.com  "> <i class="fas fa-envelope"></i>
+                            simplesnippetsinfo@gmail.com </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse  navbar-light navbar-expand-md" style="background-color:#f7fafc;margin-top: -4px;">
+                <a class="navbar-brand" href="">
+                    <img src="assets/RISHT_Logo.png" style="width: 7vw;height: 7vw;" alt="">
+                    <div class="heading"
+                        style="float:right;font-family: 'Times New Roman'; font-size:5vw;font-weight: 600;"><span
+                            class="navbar-text" style="color: #F53232;">RISHT</span></div>
+                    <p style="text-align:left;font-family:'Segoe Script';font-size: 0.7vw;color:black;">Making Digitally
+                        Unbeatable...</p>
+                </a>
+                <button data-toggle="collapse" data-target="#navbarToggler" type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                href="#">Courses</a>
+                            <div style="overflow-y: auto;" class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Hardware And Networking</a>
+                                <a class="dropdown-item" href="#">Repairing Services</a>
+                                <a class="dropdown-item" href="#">Programming</a>
+                                <a class="dropdown-item" href="#">PGDCA</a>
+                                <a class="dropdown-item" href="#">DCA</a>
+                                <a class="dropdown-item" href="#">Software Development</a>
+                                <a class="dropdown-item" href="#">DTP</a>
+                                <a class="dropdown-item" href="#">Multimedia</a>
+                                <a class="dropdown-item" href="#">Tally</a>
+                                <a class="dropdown-item" href="#">Autocad</a>
+                                <a class="dropdown-item" href="#">Digital Marketing</a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button type="button" id="#Login" class="btn btn-link btn-sm" data-toggle="modal"
+                                data-target="#exampleModal" style="text-decoration: none;">
+                                Login
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="Email" class="col-form-label">Email:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Password:</label>
+                                                    <input type="password" class="form-control" id="message-text">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Login</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-link btn-sm" style="text-decoration: none;"onclick="location.href = 'signup.html';">Sign Up</a>
+                        </li>
+                    </ul>
+                
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="breadcrumbs-section">
+        <div class="container-fluid pl-3 pr-3 p-sm-3">
+          <div class="row">
+            <div class="col-12">
+              <h2>Courses</h2>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="default.html">Home</a></li>
+                <li class="breadcrumb-item active">Courses</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+      <div class="row">
+        <div class="col-md-6  text-center">
+            <div class="courseheading" style="background-color: #F53232">Software Courses</div>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div style="margin-left: 5px">Computer Fundamentals - <b style="color:black;">3 months</b></div>
+              </button>
+            </h5>
+          </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                    <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                    <ul style="margin-top: -2px">
+                        <li>Fundamentals-Architecture, Memory, Number System,Software,...</li>
+                        <li>Windows7/10 - Booting, Desktop, Explorer, Paint, Notepad, ...</li>
+                        <li>MS-Office - Word, Excel, Powerpoint</li>
+                        <li>Internet</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Enroll</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div style="margin-left: 5px">Diploma in Computer Application (DCA)- <b style="color: black">6 months</b></div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                    <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                    <ul style="margin-top: -2px">
+                        <li>Fundamentals - Architecture, Memory, Number System, Software, ...</li>
+                        <li>MS-DOS - Internal commands, External commands</li>
+                        <li>Windows7/10 - Booting, Desktop, Explorer, Paint, Notepad, ...</li>
+                        <li>MS-Office - Word, Excel, Powerpoint</li>
+                        <li>DTP - Pagemaker, CorelDraw, Akruti</li>
+                        <li>Internet</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Enroll</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div style="margin-left: 5px">Post Graduate Diploma in Computer Application (PGDCA)- <b style="color: black">1 year</b></div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                    <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                    <ul style="margin-top: -2px">
+                        <li>Fundamentals - Components, Memory, Number System, Software, ...</li>
+                        <li>MS-DOS - Internal commands, External commands, Batch File</li>
+                        <li>Windows7/10 - Booting, Desktop, Explorer, App, One Drive, ...</li>
+                        <li>MS-Office - Word, Excel, Powerpoint, Outlook</li>
+                        <li>Accounting - Tally(ERP-9) with GST</li>
+                        <li>DTP - Pagemaker, Akruti</li>
+                        <li>Networking & Internet</li>
+                        <li>Data Entry Techniques</li>
+                        <li>Social Networking - Facebook, Gplus, Twitter, Linkedin, Instagram</li>
+                        <li>Game Development - Construct 2D</li>
+                        <li>Digital Marketing - Email Marketing, Video Production</li>
+                        <li>Basic Hardware Concept</li>
+                        <li>Basic Programming Language - C, C++, HTML5</li>
+                        <li>Project Work</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Enroll</button>
+          </div>
+         
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingfour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Certificate in DTP - <b style="color: black;">3 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>Akruti</li>
+                        <li>Page Maker - Publication, Drawing tools, Graphics, ....</li>                                                            
+                        <li>CorelDRAW - Objects, Effects, .... </li>                                                            
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingfive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                    <div style="margin-left: 5px">Certificate in Accounting Tally(ERP-9) with GST - <b style="color: black;">3 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>User Interface and Company Management</li>  
+                        <li>Ledgers, Groups, Inventory</li> 
+                        <li>Bill wise Debtors and Creditors Ledger</li> 
+                        <li>Payment Voucher</li>  
+                        <li>Receipt Voucher</li>  
+                        <li>Goods and Services Tax (GST)</li> 
+                        <li>GST Returns and Payment</li>                                    
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingsix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                    <div style="margin-left: 5px">Certificate in Multimedia - <b style="color: black;">6 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>Akruti</li>
+                        <li>Page Maker - Publication, Drawing tools, Graphics, ....</li>  
+                        <li>Photoshop - </li>                                                          
+                        <li>CorelDRAW - Objects, Effects, .... </li>
+                        <li>Illustrator -</li>   
+                        <li>Freehand - </li>                                         
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingseven">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Advanced Certificate in Multimedia - <b style="color: black">1 year</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>Akruti</li>
+                        <li>Page Maker - Publication, Drawing tools, Graphics, ....</li>  
+                        <li>Photoshop - </li>                                                          
+                        <li>CorelDRAW - Objects, Effects, .... </li>
+                        <li>Illustrator -</li>   
+                        <li>Freehand - </li> 
+                        <li>Flex Animation</li>
+                        <li>Web Designing using HTML5 & CSS3</li>   
+                        <li>Project Work</li>                                     
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingeight">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Certificate in AutoCAD - <b style="color: black">1 year</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>2D Drawing</li>
+                        <li>2D View Building Drawing</li>
+                        <li>Isometric Snap Drawing</li>
+                        <li>3D Machine Drawing</li>
+                        <li>3D Modeling</li> 
+                        <li>Graph System</li>
+                        <li>Project Work</li>                               
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingnine">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Certificate in Game Development(Construct2)-<b style="color: black">1 year</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>Physics</li>
+                        <li>Sprite</li>
+                        <li>Object</li>
+                        <li>Animation</li>
+                        <li>Event</li>
+                        <li>Project Work</li>                           
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingten">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Certificate in App Development(Mobile/Windows)-<b style="color: black">3 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <ul style="margin-top: -2px">
+                            <li>Controls</li>
+                            <li>Map Service</li>
+                            <li>REST</li>
+                            <li>SQLite</li>
+                            <li>Project Work</li>                             
+                        </ul>                            
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingeleven">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeleven" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Certificate in Digital Marketing -<b style="color: black">1 year</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseeleven" class="collapse" aria-labelledby="headingeleven" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <ul style="margin-top: -2px">
+                            <li>Email Marketing</li>
+                            <li>Video Production</li>
+                            <li>Search Engine Optimization (SEO)</li>
+                            <li>Social Media Optimization (SMO)</li>
+                            <li>Project Work</li>                        
+                        </ul>                             
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingtwelve">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsetwelve" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Programming Language(C, C++, DS) - <b style="color: black">4 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsetwelve" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                      <ul style="margin-top: -2px">
+                        <li>Programming in C</li>
+                        <li>Programming in C++</li>
+                        <li>Programming in DS</li>
+                        <li>Project Work</li>                            
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+        <div class="card">
+            <div class="card-header" id="headingthirteen">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsethirteen" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Programming Language(JAVA)-<b style="color: black">6 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsethirteen" class="collapse" aria-labelledby="headingthirteen" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                     
+                      <ul style="margin-top: -2px">
+                        <li>Core Java</li>
+                        <li>Advance Java</li>
+                        <li>Struct</li>
+                        <li>Hibernate</li> 
+                        <li>Servlet</li> 
+                        <li>Project Work</li>                          
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingforteen">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseforteen" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">Programming Language(DOT NET)-<b style="color: black">6 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseforteen" class="collapse" aria-labelledby="headingforteen" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                     
+                      <ul style="margin-top: -2px">
+                        <li>Programming in C#</li>
+                        <li>SQL Server</li>
+                        <li>ASP.NET</li>
+                        <li>AJAX</li> 
+                        <li>AZURE Cloud</li> 
+                        <li>Project Work</li>                          
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingfifteen">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefifteen" aria-expanded="false" aria-controls="collapseThree">
+                  <div style="margin-left: 5px">DBMS(Oracle/MySQL/SQL Server) -<b style="color: black">6 months</b></div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapsefifteen" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                      <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                     
+                      <ul style="margin-top: -2px">
+                        <li>SQL</li>
+                        <li>DB Objects - Table, View, Stored Procedure,.....</li>
+                        <li>PL/SQL</li>
+                        <li>Project Work</li>                          
+                    </ul>
+                  </div>
+              </div>
+              <button type="button" class="btn btn-primary">Enroll</button>
+            </div>
+           
+          </div>
+         </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="courseheading" style="background-color: #F53232">
+            Hardware & Networking Courses
+        </div>
+        <div class="accordion" id="accordionExample2">
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    <div style="margin-left: 5px">Adv. Diploma in Computer H/W & Networking(ADCHN) - <b style="color: black;">1 year</b></div>
+                    
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample2">
+                <div class="card-body">
+                    <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                        <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                        <ul style="margin-top: -2px">
+                            <li>Basic Digital Electronics</li>
+                            <li>Assembling & Maintenance</li>  
+                            <li>Motherboard Repairing</li>   
+                            <li>Monitor Repairing</li> 
+                            <li>Printer Repairing</li>   
+                            <li>OS Installation</li>   
+                            <li>Networking</li>  
+                            <li>Server Management</li>  
+                            <li>Project Work</li>          
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Enroll</button>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      <div style="margin-left: 5px">Diploma in Computer H/W & Networking(DCHN) -<b style="color: black;">6 months</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Basic Digital Electronics</li>
+                            <li>Assembling & Maintenance</li>
+                            <li>Motherboard Repairing</li>   
+                            <li>Monitor Repairing</li> 
+                            <li>Printer Repairing</li>   
+                            <li>OS Installation</li>   
+                            <li>Networking</li>   
+                            <li>Project Work</li>                            
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      <div style="margin-left: 5px">Certificate in Hardware Technology (A+) - <b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+                 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          
+                          <ul style="margin-top: -2px">
+                            <li>Install and configure peripheral components</li> 
+                            <li>Manage system components</li> 
+                            <li>Manage data storage</li> 
+                            <li>Install and configure Windows.</li>   
+                            <li>Support printers and multifunction devices.</li>        
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Network Technology (N+) - <b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Design and implement functional networks</li>
+                            <li>Configure, manage, and maintain essential network devices</li>
+                            <li>Identify benefits and drawbacks of existing network configurations</li>
+                            <li>Implement network security, standards, and protocols</li>
+                            <li>Support the creation of virtualized networks</li>              
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading5">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Desktop Support (OS)-<b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Installation of Windows, Ubuntu, Windows Server OS</li>
+                            <li>Creation of virtual OS Environment for Windows & Ubuntu</li>
+                            <li>File system management in Windows and Ubuntu</li>
+                            <li>Partitioning a hard disk</li>
+                            <li>Managing devices and drivers in an OS</li>
+                            <li>Configure backups</li>
+                            <li>Configure Remote Desktop Settings</li>                                                                           
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Printer Repairing -<b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Basic Electronics</li>
+                            <li>Spare Parts Identification</li>  
+                            <li>DMP</li> 
+                            <li>Print Head Repairing</li>
+                            <li>Assembled & Disassembles</li>
+                            <li>Fault Finding</li>          
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading7">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Monitor & SMPS Repairing -  <b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Basic Electronics</li>
+                            <li>Current & Voltage Sources</li>
+                            <li>SMPS Tracing</li>
+                            <li>Monitor Circiut Tracing</li>
+                            <li>Fault Finding & Trouble Shooting</li>                                                                           
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading8">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Laptop Repairing -<b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <li>Assembled & Disassembled</li>
+                            <li>Trouble Shooting & Fault Finding</li>
+                            <li>Battery Fault</li>
+                            <li>Motherboard Fault</li>                                                                           
+                        </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading9">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in Mobile Repairing-<b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <ul style="margin-top: -2px">
+                                <li>Basic Electronics</li>  
+                                <li>SIM Technology</li>
+                                <li>Transmission Problem</li> 
+                                <li>Locking Problem</li>  
+                                <li>Software Loading</li>                                                                      
+                            </ul>         
+                          </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading10">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapseOne">
+                      <div style="margin-left: 5px">Certificate in LINUX Programming -<b style="color: black;">1 year</b></div>
+                      
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample2">
+                  <div class="card-body">
+                      <div style="text-align: justify; margin-left: 5px; margin-right: 5px">
+                          <div style="font-weight: bold; text-decoration: underline">Syllabus</div>
+                          <ul style="margin-top: -2px">
+                            <ul style="margin-top: -2px">
+                                <li>Linux Basics</li>
+                                <li>Unix Shell Programming</li>
+                                <li>Linux Administration</li>                                                                           
+                            </ul>        
+                          </ul>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">Enroll</button>
+                </div>
+              </div>
+          </div>
+    </div>
+      </div>
+    </section>
+    <section>
+        <div class="row" style="height:100%;width:100%">
+            <div class="col-12">
+            <marquee>
+                <b style="font-family:'Segoe UI';font-size:14px;">
+                    Discount on Course Fee for SC/ST, Physically Challenged and Ration Card Holder Students</b>
+            </marquee>
+        </div>
+        </div>
+    </section>
+       <section>
+                <div class="row">
+                  <div class="col-12">
+                    <div style="height:28px;width:100%;
+                    background-color: #F53232;
+                    border-top-left-radius:8px;
+                    border-top-right-radius:8px;
+                    border-bottom-left-radius:8px;
+                    border-bottom-right-radius:8px;
+                    font-family:Consolas;
+                    font-size:18px;
+                    font-weight:bold;
+                    color:black;text-align:center;text-decoration:underline;">Global Certification</div>
+                  </div>
+                </div>
+                      <div class="row text-center">
+                        <div class="col-md-4 mt-1">
+                          <div class="certification_div"><b style="color: black; font-size: 22px">CISCO</b><p>
+                            CCNA, CCNP, CCIE</p></div>
+
+                        </div>
+                        <div class="col-md-4 mt-1"><div class="certification_div"><div><b style="color: black; font-size: 22px">ORACLE</b></div>
+                          <div>OCP, OCM, OCS, OCE</div></div></div>
+                        <div class="col-md-4 mt-1"><div class="certification_div"><div><b style="color: black; font-size: 22px">MICROSOFT</b><br />
+                          MTA, MCSA, MCSE, MOS</div></div></div>
+                      </div>
+                      <div class="row text-center">
+                        <div class="col-md-4 mt-1"><div class="certification_div"><b style="color: black; font-size: 22px">JAVA</b><br />
+                          SCJA, SCJP, SCWCD, SCMAD</div></div>
+                        <div class="col-md-4 mt-1"><div class="certification_div"><b style="color: black; font-size: 22px">LINUX</b><br />
+                          RHCSA, RHCE, RHCVA, RHCSS, RHCDS</div></div>
+                        <div class="col-md-4 mt-1"><div class="certification_div"><b style="color: black; font-size: 22px">GOOGLE</b><br />
+                          GDC, AAD, MWS, GCCPCA</div></div>
+                      </div>
+                      <div class="row text-center">
+                        <div class="col-md-4 mt-1"><div class="certification_div"><b style="color: black; font-size: 22px">SAP</b><br />
+                          SCTA, SCAP, SCAS, SCAA, SCDA</div></div>
+                      
+                      <div class="col-md-4 mt-1"><div class="certification_div"><b style="color: black; font-size: 22px">IBM</b><br />
+                        ICA, ICDP, ICAD, ICSE, ICS</div></div>
+                      <div class="col-md-4 mt-1">  <div class="certification_div"><b style="color: black; font-size: 22px">OKCL</b><br />
+                        OS-CIT</div></div>
+                      </div>
+                  </section>
+    
+   <section>
+       <div class="row">
+           <div class="col-12">
+            <div class="informationDiv">
+                <ul style="margin:5px 5px 5px 5px;list-style-type:lower-roman;padding-top:5px">
+                    <li>
+                        There will be 10 students in each batch.
+                    </li>
+                    <li>
+                        We provide Normal Track & Fast Track classes.
+                    </li>
+                    <li>
+                        In class room, Theory and Practical will be provided by the concern faculty.
+                    </li>
+                    <li>
+                        Average percentage of student attendance should be 75%.
+                    </li>
+                    <li>
+                        Dues should be paid within 10th of every month. Otherwise, late fee of INR 10 will be charged per day.
+                    </li>
+                    <li>
+                        After successfully completion of course and all dues clear, institute will provide certificate within 2 months.
+                    </li>
+                </ul>
+            </div>
+           </div>
+       </div>
+   </section>   
+    <footer class="full-footer">
+        <div class="container">
+            <div class="row mt-1">
+                <div class="col-md-2 pt-1">
+                    <div style="height: 20%; color: white; font-family: Tahoma; font-size: 12px;">
+
+                        <a class="lnkFooter" href="RISHT_Faqs.aspx">FAQs</a>
+
+                        <a class="lnkFooter" href="../Web_SECT/SECT_Sitemap.aspx">Sitemap</a>
+
+                        <a class="lnkFooter" href="../Web_SECT/SECT_Partners.aspx">Partners</a>
+
+                        <a class="lnkFooter" href="../Web_SECT/SECT_Policy.aspx">Policy</a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 pt-1">
+                    <a style="color:silver;" class="p-1" href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+                    <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-google-plus-square"></i></a>
+                    <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+                    <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                </div>
+                <div class="col-md-5">
+                    <div class="pt-1" style="height: 20%; color: white; font-family: Tahoma; font-size: 12px;">
+                        <b style="color: yellow;font-size:18px">&#x21FE;&nbsp;&nbsp;</b>
+                        <a class="lnkFooter" href="../Web_SECT/SECT_Home.aspx">SECT</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="lnkFooter" href="../Web_HERITAGE/HERITAGE_Home.aspx">HERITAGE</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="lnkFooter" href="../Web_REGIONAL/REGIONAL_Home.aspx">RA</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="lnkFooter" href="../Web_IHMS/IHMS_Home.aspx">IHMS</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="lnkFooter" href="../Web_AIPER/AIPER_Home.aspx">AIPER</a>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+
+                    Powered by:<br> <a style="font-weight: bold; color: white" href="http://www.axialindia.com">Axial
+                        Solutions Pvt. Ltd.</a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>    
+</html>
+
+
+
+<!-- <div class="certificationlist">
+                            <table style="height: auto; width: 100%" border="0">
+                                <tr>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                       
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                        
+                                    </td>
+                                    <td style="width: 33%">
+                                      
+                                    </td>
+                                </tr>
+                            </table>-->

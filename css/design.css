@@ -1,0 +1,224 @@
+.container-fluid{
+
+padding-top:0;
+padding-bottom:0;
+margin-top: 0;
+}
+.container{
+padding-left: 0;
+padding-right: 0;
+padding-top:0;
+padding-bottom:0;
+margin-top: 0;
+}
+.navbar{
+  padding-left: 0;
+padding-right: 0;
+padding-top:0;
+padding-bottom:0;
+margin-top: 0;
+
+}
+.full-footer{
+  background-color: #243c4f;
+  
+}
+.zoom{
+  transition: transform .1s;
+}
+.zoom:hover{
+  transform: scale(1.1);
+}
+
+#divSlogan1 {
+    height:50px;
+    font-family: Tahoma;
+    font-size:26px; 
+    color: #F53232; 
+    text-align: center; 
+    font-weight: bold;
+    -webkit-animation-name: SloganAnime1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: SloganAnime1;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -o-animation-name: SloganAnime1;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    animation-name: SloganAnime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes SloganAnime1 {
+    from {
+        font-size: 26px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+@-moz-keyframes SloganAnime1 {
+    from {
+        font-size: 26px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+@-o-keyframes SloganAnime1 {
+    from {
+        font-size: 26px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+@keyframes SloganAnime1 {
+    from {
+        font-size: 26px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+#divSlogan2 {
+    height:50px;
+    font-family: Tahoma;
+    font-size:26px; 
+    color: #F53232; 
+    text-align: center; 
+    font-weight: bold;
+    -webkit-animation-name: SloganAnime2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: SloganAnime2; /* Mozilla */
+    -moz-animation-duration: 2s; 
+    -moz-animation-iteration-count: infinite; 
+    -moz-animation-direction: alternate;
+    -o-animation-name: SloganAnime2; /* Opera */
+    -o-animation-duration: 2s; 
+    -o-animation-iteration-count: infinite; 
+    -o-animation-direction: alternate;
+    animation-name: SloganAnime2;/* Standard */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes SloganAnime2 {
+    from {
+        font-size: 16px;
+    }
+
+    to {
+        font-size: 26px;
+    }
+}
+
+@-moz-keyframes SloganAnime2 {
+    from {
+        font-size: 16px;
+    }
+
+    to {
+        font-size: 26px;
+    }
+}
+
+@-o-keyframes SloganAnime2 {
+    from {
+        font-size: 16px;
+    }
+
+    to {
+        font-size: 26px;
+    }
+}
+
+@keyframes SloganAnime2 {
+    from {
+        font-size: 16px;
+    }
+
+    to {
+        font-size: 26px;
+    }
+}
+.informationDiv{
+    
+    width:98%;
+    margin:10px auto;
+    background-color:#005CAD;
+    color:white;
+    border-radius:5px;
+    font-family:Consolas;
+    font-size:13px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,1);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.courseheading{
+    height:28px;
+    width:100%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    font-family:Consolas;
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+    text-align:center;
+    text-decoration:underline;
+}
+.certification{
+    height:194px;
+    width:100%;
+    /*border:2px solid gray;*/
+    border-radius:8px;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,1);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,1);
+    box-shadow: 0 0 20px rgba(0,0,0,1);   
+}
+.certificationheading{
+    height:28px;
+    width:100%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    font-family:Consolas;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    text-decoration:underline;
+}
+.certificationlist{
+    height:160px;
+    width:100%;
+}
+.certification_div{
+    height:55px;
+    width:99%;
+    margin:0px auto;
+    font-family: Consolas;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;  
+    text-align:center; 
+    background-color:gray;
+    
+    color:white;
+}
